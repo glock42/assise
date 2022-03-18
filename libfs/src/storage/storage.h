@@ -45,7 +45,7 @@ extern "C" {
 #define g_hdd_dev	3 //HDD shared area
 #define g_log_dev	1 //log area (by default, use same device as dev-dax shared area)
 
-static uint64_t dev_size[g_n_devices + 1] = {0UL, 64424509440UL, 0UL, 0UL};
+static uint64_t dev_size[g_n_devices + 1] = {0UL, 34359738368UL, 0UL, 0UL};
 
 
 enum pmem_persist_options {

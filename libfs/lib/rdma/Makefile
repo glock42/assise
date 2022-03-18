@@ -1,7 +1,6 @@
 CC = gcc #-D_GNU_SOURCE # C compiler
 #CFLAGS = -fPIC -Wall -Wextra -O2 -g # C flags
 CFLAGS = -fPIC -O2 -g
-CFLAGS += -I../rdma-core/build/include
 LDFLAGS = -shared  # linking flags
 
 RM = rm -f  # rm command
@@ -16,7 +15,6 @@ CPPFLAGS += -DIBV_WRAPPER_INLINE
 CPPFLAGS += -D_GNU_SOURCE
 CPPFLAGS += -fvisibility=default
 
-LDFLAGS +=  -Wl,-rpath=../rdma-core/build/lib -L../rdma-core/build/lib
 LDLIBS = -lrdmacm -libverbs -lpthread -lrt
 
 .PHONY: all

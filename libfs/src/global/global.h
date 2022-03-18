@@ -25,8 +25,8 @@ void mlfs_setup(void);
 #define g_hdd_block_size_shift 22UL
 
 // # of blocks allocated to private log (for each LibFS process)
-//#define g_log_size 32768UL // (128 MB)
-#define g_log_size 262144UL // (1 GB)
+#define g_log_size 32768UL // (128 MB)
+//#define g_log_size 262144UL // (1 GB)
 //#define g_log_size 524288UL // (2 GB)
 //#define g_log_size 1310720UL // (5 GB)
 //#define g_log_size 131072UL
@@ -94,7 +94,7 @@ void mlfs_setup(void);
 
 // # of replicas in cluster
 // Note: Only hot replicas are implemented (other replica types are not used)
-#define g_n_hot_rep 1	// Hot replica
+#define g_n_hot_rep 3	// Hot replica
 #define g_n_hot_bkp 0	// Hot backup (reserve)
 #define g_n_cold_bkp 0	// Cold backup (reserve)
 #define g_n_ext_rep 0	// External Replicas (not colocated)

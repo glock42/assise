@@ -18,7 +18,7 @@ extern "C" {
 #endif
 extern int log_fd;
 
-#define MLFS_PRINTF
+//#define MLFS_PRINTF
 
 #ifdef MLFS_LOG
 #define mlfs_log(fmt, ...) \

@@ -2,5 +2,5 @@
 
 PATH=$PATH:.
 
-LD_PRELOAD=../build/libmlfs.so MLFS_PROFILE=1 ${@}
+LD_PRELOAD=../build/libmlfs.so MLFS_PROFILE=0 ${@}
 

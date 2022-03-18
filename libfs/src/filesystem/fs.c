@@ -462,7 +462,7 @@ void init_fs(void)
 		perf_profile = getenv("MLFS_PROFILE");
 
 		//FIXME: only for testing
-		//perf_profile = 1;
+		//perf_profile = 0;
 
 		if (perf_profile)
 			enable_perf_stats = 1;

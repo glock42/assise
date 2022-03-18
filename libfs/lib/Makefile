@@ -5,7 +5,6 @@ all:	download
 	#if [ ! -d "dpdk-$(DPDK_VER)" ]; then tar xf dpdk-$(DPDK_VER).tar.xz; fi
 	#sudo make install -C dpdk-$(DPDK_VER) T=x86_64-native-linuxapp-gcc DESTDIR=dpdk-$(DPDK_VER)/ -j8
 	make -C nvml -j8
-	(cd rdma-core && ./build.sh)
 	(cd rdma && make)
 	(cd syscall_intercept; \
 	 mkdir build; \
